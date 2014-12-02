@@ -19,11 +19,23 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        var urlString = "http://www.weather-forecast.com/locations/" + city.text + "/forecasts/latest"
+        var urlString = "http://www.weather-forecast.com/locations/" + city.text.stringByReplacingOccurrencesOfString(" ", withString: "") + "/forecasts/latest"
+              //takes spaces out, ex San Francisco
         
-        println(urlString) 
+        var url = NSURL(string: urlString)
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            
+            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+        
+        }
+        
+        task.resume()
+        //prints html to the console
+        
         
     }
+    
     
     
     override func viewDidLoad() {
