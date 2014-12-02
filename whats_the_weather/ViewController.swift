@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
+        self.view.endEditing(true)
+        //hides keyboard
+        
         var urlString = "http://www.weather-forecast.com/locations/" + city.text.stringByReplacingOccurrencesOfString(" ", withString: "") + "/forecasts/latest"
               //takes spaces out, ex San Francisco
         
@@ -28,11 +32,32 @@ class ViewController: UIViewController {
             
             var urlContent = NSString(data: data, encoding: NSUTF8StringEncoding)
             
-            var contentArray = urlContent!.componentsSeparatedByString("<span class=\"phrase\">")
+            let tempurlContent: String = urlContent as String
             
-            var newContentArray = contentArray[1].componentsSeparatedByString("</span>")
+            if (urlContent!.containsString("<span class=\"phrase\">")) {
             
-            println(newContentArray[0]) 
+                var contentArray = urlContent!.componentsSeparatedByString("<span class=\"phrase\">")
+                
+                var newContentArray = contentArray[1].componentsSeparatedByString("</span>")
+                
+                var weatherForcast = newContentArray[0].stringByReplacingOccurrencesOfString("&deg;", withString: "º") as String
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                
+                    self.message.text = weatherForcast
+                    
+                }
+            
+            } else {
+            
+                dispatch_async(dispatch_get_main_queue()) {
+                
+                    self.message.text = "Couldn't find city - please try again"
+                    
+                }
+            
+            }
+            
         
         }
         
