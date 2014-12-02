@@ -43,6 +43,7 @@ class ViewController: UIViewController {
                 var weatherForcast = newContentArray[0].stringByReplacingOccurrencesOfString("&deg;", withString: "º") as String
                 
                 dispatch_async(dispatch_get_main_queue()) {
+                    //speeds up process
                 
                     self.message.text = weatherForcast
                     
