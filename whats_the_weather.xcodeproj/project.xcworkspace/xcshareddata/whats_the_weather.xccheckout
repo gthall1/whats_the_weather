@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>144066D3-087E-4A54-9807-692C8BC012AC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>whats_the_weather</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22996A3FB1FEF09D70D267DA34AAC66BF2EA21B5</key>
+		<string>https://github.com/gthall1/whats_the_weather.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>whats_the_weather.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22996A3FB1FEF09D70D267DA34AAC66BF2EA21B5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gthall1/whats_the_weather.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22996A3FB1FEF09D70D267DA34AAC66BF2EA21B5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22996A3FB1FEF09D70D267DA34AAC66BF2EA21B5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>whats_the_weather</string>
+		</dict>
+	</array>
+</dict>
+</plist>

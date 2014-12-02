@@ -13,6 +13,7 @@
 		8BCBCAA81A2E48160083AA1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCBCAA71A2E48160083AA1B /* Images.xcassets */; };
 		8BCBCAAB1A2E48160083AA1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCBCAA91A2E48160083AA1B /* LaunchScreen.xib */; };
 		8BCBCAB71A2E48160083AA1B /* whats_the_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBCAB61A2E48160083AA1B /* whats_the_weatherTests.swift */; };
+		8BCBCAC11A2E4A020083AA1B /* coastline.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BCBCAC01A2E4A020083AA1B /* coastline.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8BCBCAB01A2E48160083AA1B /* whats_the_weatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whats_the_weatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBCAB51A2E48160083AA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCBCAB61A2E48160083AA1B /* whats_the_weatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whats_the_weatherTests.swift; sourceTree = "<group>"; };
+		8BCBCAC01A2E4A020083AA1B /* coastline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coastline.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				8BCBCAA01A2E48160083AA1B /* AppDelegate.swift */,
 				8BCBCAA21A2E48160083AA1B /* ViewController.swift */,
 				8BCBCAA41A2E48160083AA1B /* Main.storyboard */,
+				8BCBCAC01A2E4A020083AA1B /* coastline.png */,
 				8BCBCAA71A2E48160083AA1B /* Images.xcassets */,
 				8BCBCAA91A2E48160083AA1B /* LaunchScreen.xib */,
 				8BCBCA9E1A2E48160083AA1B /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				8BCBCAA61A2E48160083AA1B /* Main.storyboard in Resources */,
 				8BCBCAAB1A2E48160083AA1B /* LaunchScreen.xib in Resources */,
+				8BCBCAC11A2E4A020083AA1B /* coastline.png in Resources */,
 				8BCBCAA81A2E48160083AA1B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
