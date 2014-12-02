@@ -10,6 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var city: UITextField!
+    
+    
+    @IBOutlet weak var message: UILabel!
+    
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        var urlString = "http://www.weather-forecast.com/locations/" + city.text + "/forecasts/latest"
+        
+        println(urlString) 
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
