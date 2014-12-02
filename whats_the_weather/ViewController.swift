@@ -26,7 +26,13 @@ class ViewController: UIViewController {
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            var urlContent = NSString(data: data, encoding: NSUTF8StringEncoding)
+            
+            var contentArray = urlContent!.componentsSeparatedByString("<span class=\"phrase\">")
+            
+            var newContentArray = contentArray[1].componentsSeparatedByString("</span>")
+            
+            println(newContentArray[0]) 
         
         }
         
